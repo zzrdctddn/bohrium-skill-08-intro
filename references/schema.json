@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "intro-writer result.json",
+  "type": "object",
+  "required": [
+    "case_id",
+    "status",
+    "artifact",
+    "self_check"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "success",
+        "partial",
+        "blocked"
+      ]
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "background",
+        "related_work",
+        "gap",
+        "contributions"
+      ],
+      "properties": {
+        "background": {
+          "type": "string"
+        },
+        "related_work": {
+          "type": "string"
+        },
+        "gap": {
+          "type": "string"
+        },
+        "contributions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "claim_citation_ledger": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "text",
+          "type",
+          "status"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "in_paper_fact",
+              "prior_result",
+              "author_judgement"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          },
+          "confidence": {
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "unverified"
+            ]
+          }
+        }
+      }
+    },
+    "comparison_matrix": {
+      "type": "object"
+    },
+    "gap_derivation": {
+      "type": "array"
+    },
+    "contribution_evidence_map": {
+      "type": "array"
+    },
+    "fact_source_map": {
+      "type": "array"
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_review_items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "change_log": {
+      "type": "array"
+    },
+    "self_check": {
+      "type": "object"
+    }
+  }
+}
