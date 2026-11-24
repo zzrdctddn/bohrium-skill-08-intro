@@ -1,0 +1,48 @@
+{
+  "case_id": "DEMO-NOT-A-REAL-CASE",
+  "status": "success",
+  "note": "示意输出，非真实案例结果。",
+  "artifact": {
+    "background": "……（示意文本）",
+    "related_work": "……",
+    "gap": "……",
+    "contributions": [
+      "提出……（对应图3）"
+    ]
+  },
+  "claim_citation_ledger": [
+    {
+      "claim_id": "C1",
+      "text": "……",
+      "type": "prior_result",
+      "source": "Ref[2]",
+      "location": "p.3 §2",
+      "confidence": "high",
+      "status": "verified"
+    }
+  ],
+  "gap_derivation": [
+    {
+      "from_limitation": "已有方法依赖固定图结构",
+      "source": "Ref[1] §5",
+      "to_gap": "动态拓扑未覆盖",
+      "filled_by": "本文自适应模块"
+    }
+  ],
+  "contribution_evidence_map": [
+    {
+      "contribution": "自适应模块",
+      "evidence": "图3、表2",
+      "location": "§4.2"
+    }
+  ],
+  "uncertainties": [],
+  "human_review_items": [],
+  "change_log": [],
+  "self_check": {
+    "four_parts_complete": true,
+    "claims_anchored": true,
+    "citations_matched": true,
+    "contributions_evidenced": true
+  }
+}
