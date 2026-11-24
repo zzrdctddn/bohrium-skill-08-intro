@@ -1,0 +1,18 @@
+{
+  "case_id": "DEMO-NOT-A-REAL-CASE",
+  "note": "以下为演示接口的虚构示例，非官方测试案例，不构成正式答案。",
+  "task": "根据摘要与3篇参考文献撰写引言的研究背景与相关工作",
+  "params": {
+    "cite_style": "numeric",
+    "language": "zh",
+    "audience": "CS 顶会读者"
+  },
+  "materials": {
+    "abstract": "摘要文本…（示意）",
+    "references": [
+      "Ref1.bib",
+      "Ref2.bib",
+      "Ref3.bib"
+    ]
+  }
+}
